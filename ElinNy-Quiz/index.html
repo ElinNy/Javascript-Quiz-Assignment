@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elin Ny- Quiz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">Movie Quiz</h1>
+    </header>
+    <main class="contianer-lg my-2">
+      <p id="result" class="hide"></p>
+      <figure>
+        <img
+          id="classmatePic"
+          src="assets/images/movies/theater.png"
+          alt="A placeholder image of a kitten and when the game starts it generates imgages of different front-end students."
+        />
+      </figure>
+
+      <section id="numberOfStudents">
+        <h2>Choose how many Movies you want to guess</h2>
+        <button
+          id="alt1"
+          class="btn btn-secondary mx-auto mt-3 xs sm md lg mr-1 ml-1"
+        >
+          10 Movies
+        </button>
+        <button
+          id="alt2"
+          class="btn btn-secondary mx-auto mt-3 mr-3 xs sm md lg mr-1 ml-1"
+        >
+          20 Movies
+        </button>
+        <button
+          id="alt3"
+          class="btn btn-secondary mx-auto mt-3 xs sm md lg mr-1 ml-1"
+        >
+          All Movies
+        </button>
+      </section>
+
+      <section id="nameList" class="row justify-content-center hide">
+        <h2 class="hide">Here's my the options of Movies</h2>
+        <ul
+          id="namesOfClassmates"
+          class="list-group list-group-horizontal col-lg-6"
+        >
+          <li
+            id="first"
+            class="name-button list-group-item list-group-item-secondary mx-auto rounded-pill xs sm md lg"
+          ></li>
+
+          <li
+            id="second"
+            class="name-button list-group-item list-group-item-secondary mx-auto rounded-pill xs sm md lg"
+          ></li>
+
+          <li
+            id="third"
+            class="name-button list-group-item list-group-item-secondary mx-auto rounded-pill xs sm md lg"
+          ></li>
+
+          <li
+            id="fourth"
+            class="name-button list-group-item list-group-item-secondary mx-auto rounded-pill xs sm md lg"
+          ></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="hide">Here you can see the scores</h2>
+        <button id="points" class="btn hide">&#9829;</button>
+        <button id="noPoints" class="btn hide">&#9829;</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Quiz made by &copy; Elin Ny</p>
+    </footer>
+
+    <script src="students.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
